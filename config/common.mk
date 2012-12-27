@@ -2,8 +2,8 @@
 # Get Those G Apps
 #apps
 PRODUCT_COPY_FILES += \
-    vendor/google/killrom/system/app/CalendarProvider.apk:$(PRODUCT_OUT)/system/app/CalendarProvider.apk \
     vendor/google/killrom/system/app/Calendar.apk:$(PRODUCT_OUT)/system/app/Calendar.apk \
+    vendor/google/killrom/system/app/CalendarProvider.apk:$(PRODUCT_OUT)/system/app/CalendarProvider.apk \
     vendor/google/killrom/system/app/ChromeBookmarksSyncAdapter.apk:$(PRODUCT_OUT)/system/app/ChromeBookmarksSyncAdapter.apk \
     vendor/google/killrom/system/app/EmailGoogle.apk:$(PRODUCT_OUT)/system/app/EmailGoogle.apk \
     vendor/google/killrom/system/app/Exchange2Google.apk:$(PRODUCT_OUT)/system/app/Exchange2Google.apk \
@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/GoogleLoginService.apk:$(PRODUCT_OUT)/system/app/GoogleLoginService.apk \
     vendor/google/killrom/system/app/GooglePartnerSetup.apk:$(PRODUCT_OUT)/system/app/GooglePartnerSetup.apk \
     vendor/google/killrom/system/app/GoogleServicesFramework.apk:$(PRODUCT_OUT)/system/app/GoogleServicesFramework.apk \
-    vendor/google/killrom/system/app/GoogleTTS.apk:$(PRODUCT_OUT)/system/app/MarketUpdater.apk \
+    vendor/google/killrom/system/app/GoogleTTS.apk:$(PRODUCT_OUT)/system/app/GoogleTTS.apk.apk \
     vendor/google/killrom/system/app/LatinImeDictionaryPack.apk:$(PRODUCT_OUT)/system/app/LatinImeDictionaryPack.apk \
     vendor/google/killrom/system/app/Maps.apk:$(PRODUCT_OUT)/system/app/Maps.apk \
     vendor/google/killrom/system/app/MediaUploader.apk:$(PRODUCT_OUT)/system/app/MediaUploader.apk \
@@ -126,3 +126,7 @@ ifeq ($(TARGET_PRODUCT),full_grouper)
 PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/com.modaco.cameralauncher.apk:$(PRODUCT_OUT)/system/app/com.modaco.cameralauncher.apk
 endif
+
+# Bootanimation murdr
+PRODUCT_COPY_FILES += \
+    vendor/nos/killrom/prebuilt/system/media/bootanimation.zip:system/media/bootanimation.zip
