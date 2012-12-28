@@ -127,7 +127,3 @@ ifeq ($(TARGET_PRODUCT),full_grouper)
 PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/com.modaco.cameralauncher.apk:$(PRODUCT_OUT)/system/app/com.modaco.cameralauncher.apk
 endif
-
-# Bootanimation murdr
-PRODUCT_COPY_FILES += \
-    vendor/nos/killrom/prebuilt/system/media/bootanimation.zip:system/media/bootanimation.zip
