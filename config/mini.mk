@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/Phonesky.apk:$(PRODUCT_OUT)/system/app/Phonesky.apk \
     vendor/google/killrom/system/app/SetupWizard.apk:$(PRODUCT_OUT)/system/app/SetupWizard.apk \
     vendor/google/killrom/system/app/Talk.apk:$(PRODUCT_OUT)/system/app/Talk.apk \
-    vendor/google/killrom/xoom/app/Velvet.apk:$(PRODUCT_OUT)/system/app/Velvet.apk \
     vendor/google/killrom/system/app/VoiceSearchStub.apk:$(PRODUCT_OUT)/system/app/VoiceSearchStub.apk
 
 #permissions
