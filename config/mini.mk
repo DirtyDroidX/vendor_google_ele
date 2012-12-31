@@ -18,7 +18,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/GoogleLoginService.apk:$(PRODUCT_OUT)/system/app/GoogleLoginService.apk \
     vendor/google/killrom/system/app/GooglePartnerSetup.apk:$(PRODUCT_OUT)/system/app/GooglePartnerSetup.apk \
     vendor/google/killrom/system/app/GoogleServicesFramework.apk:$(PRODUCT_OUT)/system/app/GoogleServicesFramework.apk \
-    vendor/google/killrom/system/app/GoogleTTS.apk:$(PRODUCT_OUT)/system/app/GoogleTTS.apk \
+    vendor/google/killrom/xoom/app/GoogleTTS.apk:$(PRODUCT_OUT)/system/app/GoogleTTS.apk \
     vendor/google/killrom/system/app/LatinImeDictionaryPack.apk:$(PRODUCT_OUT)/system/app/LatinImeDictionaryPack.apk \
     vendor/google/killrom/system/app/MediaUploader.apk:$(PRODUCT_OUT)/system/app/MediaUploader.apk \
     vendor/google/killrom/system/app/NetworkLocation.apk:$(PRODUCT_OUT)/system/app/NetworkLocation.apk \
