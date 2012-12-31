@@ -38,7 +38,9 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/mako/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk \
     vendor/google/killrom/system/app/mako/LatinIME.apk:$(PRODUCT_OUT)/system/app/LatinIME.apk \
     vendor/google/killrom/system/app/OccamQuickOffice.apk:$(PRODUCT_OUT)/system/app/OccamQuickOffice.apk
-else
+endif
+
+ifneq ($(TARGET_PRODUCT),killr_mako)
 PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/LatinIME.apk:$(PRODUCT_OUT)/system/app/LatinIME.apk
 endif

@@ -46,6 +46,7 @@ PRODUCT_COPY_FILES += \
 #libs
 PRODUCT_COPY_FILES += \
     vendor/google/killrom/xoom/lib/libfilterpack_facedetect.so:$(PRODUCT_OUT)/system/lib/libfilterpack_facedetect.so \
+    vendor/google/killrom/xoom/lib/libjni_filtershow_filters.so:system/lib/libjni_filtershow_filters.so \
     vendor/google/killrom/xoom/lib/libfrsdk.so:$(PRODUCT_OUT)/system/lib/libfrsdk.so \
     vendor/google/killrom/system/lib/libgoogle_recognizer_jni.so:$(PRODUCT_OUT)/system/lib/libgoogle_recognizer_jni.so \
     vendor/google/killrom/xoom/lib/liblightcycle.so:$(PRODUCT_OUT)/system/lib/liblightcycle.so \
