@@ -48,6 +48,11 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/tuna/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk
 endif
 
+ifneq ($(filter killrom_maserati killrom_solana killrom_spyder killrom_targa killrom_umts_spyder,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    vendor/google/killrom/xoom/app/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk
+endif
+
 ifeq ($(filter killrom_maserati killrom_solana killrom_spyder killrom_targa killrom_umts_spyder,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/Wallet.apk:$(PRODUCT_OUT)/system/app/Wallet.apk
