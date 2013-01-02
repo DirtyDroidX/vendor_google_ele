@@ -72,10 +72,6 @@ PRODUCT_COPY_FILES += \
 #libs
 PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/lib/libfacelock_jni.so:$(PRODUCT_OUT)/system/lib/libfacelock_jni.so \
-    vendor/google/killrom/system/lib/libjni_mosaic.so:$(PRODUCT_OUT)/system/lib/libjni_mosaic.so \
-    vendor/google/killrom/system/lib/libcamera_metadata.so:$(PRODUCT_OUT)/system/lib/libcamera_metadata.so \
-    vendor/google/killrom/system/lib/libmmcamera_hdr_lib.so:$(PRODUCT_OUT)/system/lib/libmmcamera_hdr_lib.so \
-    vendor/google/killrom/system/lib/libmmcamera_image_stab.so:$(PRODUCT_OUT)/system/lib/libmmcamera_image_stab.so \
     vendor/google/killrom/system/lib/libfilterpack_facedetect.so:$(PRODUCT_OUT)/system/lib/libfilterpack_facedetect.so \
     vendor/google/killrom/system/lib/libfrsdk.so:$(PRODUCT_OUT)/system/lib/libfrsdk.so \
     vendor/google/killrom/system/lib/libgcomm_jni.so:$(PRODUCT_OUT)/system/lib/libgcomm_jni.so \
@@ -89,6 +85,19 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/lib/libvorbisencoder.so:$(PRODUCT_OUT)/system/lib/libvorbisencoder.so \
     vendor/google/killrom/system/lib/libpicowrapper.so:$(PRODUCT_OUT)/system/lib/libpicowrapper.so \
     vendor/google/killrom/system/lib/libvoicesearch.so:$(PRODUCT_OUT)/system/lib/libvoicesearch.so
+
+ifeq ($(TARGET_PRODUCT),killr_mako)
+PRODUCT_COPY_FILES += \
+    vendor/google/killrom/system/lib/libjni_mosaic.so:$(PRODUCT_OUT)/system/lib/libjni_mosaic.so \
+    vendor/google/killrom/system/lib/libcamera_metadata.so:$(PRODUCT_OUT)/system/lib/libcamera_metadata.so \
+    vendor/google/killrom/system/lib/libmmcamera_hdr_lib.so:$(PRODUCT_OUT)/system/lib/libmmcamera_hdr_lib.so \
+    vendor/google/killrom/system/lib/libmmcamera_image_stab.so:$(PRODUCT_OUT)/system/lib/libmmcamera_image_stab.so
+endif
+
+ifneq ($(filter full_maguro full_toro,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    vendor/google/killrom/system/lib/libjni_mosaic.so:$(PRODUCT_OUT)/system/lib/libjni_mosaic.so
+endif
 
 #usr
 PRODUCT_COPY_FILES += \
