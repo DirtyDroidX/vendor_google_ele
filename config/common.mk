@@ -99,8 +99,7 @@ endif
 
 ifneq ($(filter full_maguro full_toro,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
-    vendor/google/killrom/system/lib/libjni_mosaic.so:$(PRODUCT_OUT)/system/lib/libjni_mosaic.so \
-    vendor/google/killrom/system/vendor/firmware/smc_pa_wvdrm.ift:$(PRODUCT_OUT)/system/vendor/firmware/smc_pa_wvdrm.ift
+    vendor/google/killrom/system/lib/libjni_mosaic.so:$(PRODUCT_OUT)/system/lib/libjni_mosaic.so
 endif
 
 #usr
