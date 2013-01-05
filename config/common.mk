@@ -87,7 +87,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/lib/libspeexwrapper.so:$(PRODUCT_OUT)/system/lib/libspeexwrapper.so \
     vendor/google/killrom/system/lib/libvorbisencoder.so:$(PRODUCT_OUT)/system/lib/libvorbisencoder.so \
     vendor/google/killrom/system/lib/libpicowrapper.so:$(PRODUCT_OUT)/system/lib/libpicowrapper.so \
-    vendor/google/killrom/system/lib/libvoicesearch.so:$(PRODUCT_OUT)/system/lib/libvoicesearch.so
+    vendor/google/killrom/system/lib/libvoicesearch.so:$(PRODUCT_OUT)/system/lib/libvoicesearch.so \
+    vendor/google/killrom/system/lib/libjni_filtershow_filters.so:$(PRODUCT_OUT)/system/lib/libjni_filtershow_filters.so
 
 ifeq ($(TARGET_PRODUCT),killr_mako)
 PRODUCT_COPY_FILES += \
