@@ -37,7 +37,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/Talk.apk:$(PRODUCT_OUT)/system/app/Talk.apk \
     vendor/google/killrom/system/app/VoiceSearchStub.apk:$(PRODUCT_OUT)/system/app/VoiceSearchStub.apk
 
-ifeq ($(TARGET_PRODUCT),killr_mako)
+ifeq ($(TARGET_PRODUCT),killr_mako killrom_d2vzw)
 PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/mako/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk \
     vendor/google/killrom/system/app/OccamQuickOffice.apk:$(PRODUCT_OUT)/system/app/OccamQuickOffice.apk
