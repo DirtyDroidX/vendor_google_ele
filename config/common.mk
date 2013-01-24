@@ -87,11 +87,11 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/lib/libspeexwrapper.so:$(PRODUCT_OUT)/system/lib/libspeexwrapper.so \
     vendor/google/killrom/system/lib/libvorbisencoder.so:$(PRODUCT_OUT)/system/lib/libvorbisencoder.so \
     vendor/google/killrom/system/lib/libpicowrapper.so:$(PRODUCT_OUT)/system/lib/libpicowrapper.so \
-    vendor/google/killrom/system/lib/libvoicesearch.so:$(PRODUCT_OUT)/system/lib/libvoicesearch.so \
-    vendor/google/killrom/system/lib/libjni_filtershow_filters.so:$(PRODUCT_OUT)/system/lib/libjni_filtershow_filters.so
+    vendor/google/killrom/system/lib/libvoicesearch.so:$(PRODUCT_OUT)/system/lib/libvoicesearch.so
 
 ifeq ($(TARGET_PRODUCT),killr_mako)
 PRODUCT_COPY_FILES += \
+    vendor/google/killrom/system/lib/libjni_filtershow_filters.so:$(PRODUCT_OUT)/system/lib/libjni_filtershow_filters.so \
     vendor/google/killrom/system/lib/libjni_mosaic.so:$(PRODUCT_OUT)/system/lib/libjni_mosaic.so \
     vendor/google/killrom/system/lib/libcamera_metadata.so:$(PRODUCT_OUT)/system/lib/libcamera_metadata.so \
     vendor/google/killrom/system/lib/libmmcamera_hdr_lib.so:$(PRODUCT_OUT)/system/lib/libmmcamera_hdr_lib.so \
@@ -100,6 +100,7 @@ endif
 
 ifneq ($(filter full_maguro full_toro,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
+    vendor/google/killrom/system/lib/libjni_filtershow_filters.so:$(PRODUCT_OUT)/system/lib/libjni_filtershow_filters.so \
     vendor/google/killrom/system/lib/libjni_mosaic.so:$(PRODUCT_OUT)/system/lib/libjni_mosaic.so
 endif
 
