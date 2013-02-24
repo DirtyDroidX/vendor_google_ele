@@ -65,6 +65,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/ele/system/lib/libgtalk_jni.so:$(PRODUCT_OUT)/system/lib/libgtalk_jni.so \
     vendor/google/ele/system/lib/libgtalk_stabilize.so:$(PRODUCT_OUT)/system/lib/libgtalk_stabilize.so \
     vendor/google/ele/system/lib/libjni_latinime.so:$(PRODUCT_OUT)/system/lib/libjni_latinime.so \
+    vendor/google/ele/system/lib/libjni_latinimegoogle.so:$(PRODUCT_OUT)/system/lib/libjni_latinimegoogle.so \
     vendor/google/ele/system/lib/liblightcycle.so:$(PRODUCT_OUT)/system/lib/liblightcycle.so \
     vendor/google/ele/system/lib/libpatts_engine_jni_api.so:$(PRODUCT_OUT)/system/lib/libpatts_engine_jni_api.so \
     vendor/google/ele/system/lib/libspeexwrapper.so:$(PRODUCT_OUT)/system/lib/libspeexwrapper.so \
