@@ -6,15 +6,14 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/google/ele/overlay/dictionaries
 
 #apps
 PRODUCT_COPY_FILES += \
-    vendor/google/ele/system/app/CalendarGoogle.apk:$(PRODUCT_OUT)/system/app/CalendarGoogle.apk \
-    vendor/google/ele/system/app/YouTube.apk:$(PRODUCT_OUT)/system/app/YouTube.apk \
+    vendor/google/ele/system/app/Calendar.apk:$(PRODUCT_OUT)/system/app/CalendarGoogle.apk \
     vendor/google/ele/system/app/CalendarProvider.apk:$(PRODUCT_OUT)/system/app/CalendarProvider.apk \
     vendor/google/ele/system/app/ChromeBookmarksSyncAdapter.apk:$(PRODUCT_OUT)/system/app/ChromeBookmarksSyncAdapter.apk \
     vendor/google/ele/system/app/EmailGoogle.apk:$(PRODUCT_OUT)/system/app/EmailGoogle.apk \
     vendor/google/ele/system/app/Exchange2Google.apk:$(PRODUCT_OUT)/system/app/Exchange2Google.apk \
     vendor/google/ele/system/app/FaceLock.apk:$(PRODUCT_OUT)/system/app/FaceLock.apk \
     vendor/google/ele/system/app/GenieWidget.apk:$(PRODUCT_OUT)/system/app/GenieWidget.apk \
-    vendor/google/ele/system/app/Gmail2.apk:$(PRODUCT_OUT)/system/app/Gmail2.apk \
+    vendor/google/ele/system/app/Gmail.apk:$(PRODUCT_OUT)/system/app/Gmail2.apk \
     vendor/google/ele/system/app/GmsCore.apk:$(PRODUCT_OUT)/system/app/GmsCore.apk \
     vendor/google/ele/system/app/GoogleBackupTransport.apk:$(PRODUCT_OUT)/system/app/GoogleBackupTransport.apk \
     vendor/google/ele/system/app/GoogleCalendarSyncAdapter.apk:$(PRODUCT_OUT)/system/app/GoogleCalendarSyncAdapter.apk \
@@ -37,10 +36,19 @@ PRODUCT_COPY_FILES += \
     vendor/google/ele/system/app/StreetView.apk:$(PRODUCT_OUT)/system/app/StreetView.apk \
     vendor/google/ele/system/app/Talk.apk:$(PRODUCT_OUT)/system/app/Talk.apk \
     vendor/google/ele/system/app/VoiceSearchStub.apk:$(PRODUCT_OUT)/system/app/VoiceSearchStub.apk \
-    vendor/google/ele/system/app/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk \
     vendor/google/ele/system/app/OccamQuickOffice.apk:$(PRODUCT_OUT)/system/app/OccamQuickOffice.apk \
     vendor/google/ele/system/app/Wallet.apk:$(PRODUCT_OUT)/system/app/Wallet.apk
 
+ifneq ($(filter ele_mako ele_t0lte,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    vendor/google/ele/system/app/mako/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk \
+    vendor/google/ele/system/app/OccamQuickOffice.apk:$(PRODUCT_OUT)/system/app/OccamQuickOffice.apk
+endif
+
+ifneq ($(filter ele_maguro ele_toro,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    vendor/google/ele/system/app/tuna/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk
+endif
 #permissions
 PRODUCT_COPY_FILES += \
     vendor/google/ele/system/etc/permissions/com.google.android.maps.xml:$(PRODUCT_OUT)/system/etc/permissions/com.google.android.maps.xml \
@@ -65,7 +73,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/ele/system/lib/libgtalk_jni.so:$(PRODUCT_OUT)/system/lib/libgtalk_jni.so \
     vendor/google/ele/system/lib/libgtalk_stabilize.so:$(PRODUCT_OUT)/system/lib/libgtalk_stabilize.so \
     vendor/google/ele/system/lib/libjni_latinime.so:$(PRODUCT_OUT)/system/lib/libjni_latinime.so \
-    vendor/google/ele/system/lib/libjni_latinimegoogle.so:$(PRODUCT_OUT)/system/lib/libjni_latinimegoogle.so \
     vendor/google/ele/system/lib/liblightcycle.so:$(PRODUCT_OUT)/system/lib/liblightcycle.so \
     vendor/google/ele/system/lib/libpatts_engine_jni_api.so:$(PRODUCT_OUT)/system/lib/libpatts_engine_jni_api.so \
     vendor/google/ele/system/lib/libspeexwrapper.so:$(PRODUCT_OUT)/system/lib/libspeexwrapper.so \
